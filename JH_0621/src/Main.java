@@ -12,8 +12,8 @@ public class Main {
         // Вывести все ключи из мапы на экран.
         System.out.println(map);
         System.out.println("Вывести все ключи из мапы на экран");
-        for (Map.Entry<String,Integer> entry :map.entrySet() ) {
-            System.out.println(entry.getKey());
+        for (String key :map.keySet() ) {
+            System.out.println(key);
         }
         System.out.println("-".repeat(50));
         //--------------------------------------------------------
