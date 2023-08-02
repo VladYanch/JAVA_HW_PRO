@@ -1,0 +1,6 @@
+Вам дан текстовый файл, содержащий список URL-адресов.
+Найти все URL, которые содержат протокол "https://" и заменить их на "http://"
+http://www.example.com
+http://www.example.org
+http://www.example.net
+http://www.example.com/about

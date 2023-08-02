@@ -119,8 +119,8 @@ public class Main {
     System.out.println(
             list7.stream()
                     .filter(s-> s.length()>=7
-                        && s.substring(0,3).equals("pre")
-                        && s.substring(s.length()-4,s.length()).equals("post"))
+                        && s.startsWith("pre")
+                        && s.endsWith("post"))
                     .toList()
     );
     System.out.println("_".repeat(60));
@@ -129,7 +129,7 @@ public class Main {
             list7.stream()
                     .filter(str-> str.length()== list7.stream()
                             .filter(s-> s.length() % 2 == 0)
-                            .mapToInt(s->Integer.valueOf(s.length()))
+                            .mapToInt(String::length)
                             .max().getAsInt()).toList()
     );
     System.out.println("_".repeat(60));
