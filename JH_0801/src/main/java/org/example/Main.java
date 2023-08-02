@@ -44,7 +44,7 @@ public class Main {
         Map<String, Integer> map = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String str;
-            Pattern pattern = Pattern.compile("\\w+\\\\@\\w+\\.?\\w+");
+            Pattern pattern = Pattern.compile("\\w+\\.?\\w+@\\w+\\.\\w+");
             while ((str = reader.readLine()) != null) {
                 Matcher matcher = pattern.matcher(str);
                 while (matcher.find()) {
